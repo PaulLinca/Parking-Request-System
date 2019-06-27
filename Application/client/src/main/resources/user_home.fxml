@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.UserHomeController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="810.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="home2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutButton" layoutX="661.0" layoutY="27.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="50.0" prefWidth="125.0" text="Logout" />
+      <Button fx:id="deleteRequestButton" layoutX="469.0" layoutY="26.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="25.0" prefWidth="125.0" text="Delete Request" />
+      <Button fx:id="createRequestButton" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#createRequestAction" prefHeight="50.0" prefWidth="125.0" text="Create Request" />
+      <Button fx:id="viewRequestsButton" layoutX="170.0" layoutY="26.0" mnemonicParsing="false" onAction="#viewRequestsAction" prefHeight="25.0" prefWidth="125.0" text="View Requests" />
+      <Button fx:id="updateRequestButton" layoutX="469.0" layoutY="52.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="18.0" prefWidth="125.0" text="Update Request" />
+      <Button fx:id="exitButton" layoutX="351.0" layoutY="571.0" mnemonicParsing="false" onAction="#exitAction" text="Exit Application" />
+      <Button fx:id="addCarButton" layoutX="318.0" layoutY="26.0" mnemonicParsing="false" onAction="#addCarAction" prefHeight="25.0" prefWidth="125.0" text="Add Car" />
+      <Button fx:id="deleteCarButton" layoutX="318.0" layoutY="52.0" mnemonicParsing="false" onAction="#deleteCarAction" prefHeight="18.0" prefWidth="125.0" text="Delete Car" />
+      <ListView fx:id="listView" layoutX="106.0" layoutY="185.0" prefHeight="356.0" prefWidth="589.0" visible="false" />
+      <Button fx:id="viewCarsButton" layoutX="170.0" layoutY="52.0" mnemonicParsing="false" onAction="#viewCarsAction" prefHeight="25.0" prefWidth="125.0" text="View Cars" />
+      <Button fx:id="clearButton" layoutX="106.0" layoutY="159.0" mnemonicParsing="false" onAction="#clearAction" text="Clear" visible="false" />
+   </children>
+</AnchorPane>
